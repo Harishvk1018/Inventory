@@ -152,7 +152,7 @@ public class Inventory
 					int quantity = scn.nextInt();
 					if(op2 == 1) {
 						//Buy
-						if(quantity <= _product.getMinSellQuantity()) {
+						if(quantity <= _product.getQuantity()) {
 							double totalCost = quantity * _product.getPrice();
 							System.out.println("Total cost for "+quantity+" of "+_product.getName()+" is "+totalCost);
 							System.out.println("To confirm press 1");
